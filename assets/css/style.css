@@ -24,7 +24,7 @@
 body {
     background-color: var(--bg-color);
     overflow-x: hidden;
-    height: 400vh;
+    height: 600vh;
 }
 
 .main {
@@ -311,4 +311,57 @@ body {
     border: 3px solid var(--bg-color);
     color: var(--bg-color);
     cursor: pointer;
+}
+
+.about{
+    background-color: var(--bg-color);
+    padding: 50px 7%;
+}
+
+.about-title,
+.about-title span {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 35px;
+    border-bottom: 1px solid;
+    font-weight: 600;
+}
+
+.about-title span {
+    color: var(--text-dark-color);
+    border: none;
+}
+
+.about-container{
+    display: flex;
+}
+
+.about-image-container, .about-text-container{
+    flex: 1 1 450px;
+}
+
+.about-image-container img{
+    width: 100%;
+}
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px 25px;
+    color: var(--light-color);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.about-text-title{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.about-text-container p {
+    font-size: 15px;
+    color: var(--secondary-color);
+    padding: 10px 0;
+    line-height: 1.8;
 }
